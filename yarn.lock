@@ -4416,10 +4416,10 @@ diff@^8.0.2:
   resolved "https://registry.yarnpkg.com/diff/-/diff-8.0.2.tgz#712156a6dd288e66ebb986864e190c2fc9eddfae"
   integrity sha512-sSuxWU5j5SR9QQji/o2qMvqRNYRDOcBTgsJ/DeCf4iSN4gW+gNMXM7wFIP+fdXZxoNiAnHUTGjCr+TSWXdRDKg==
 
-docus@latest:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/docus/-/docus-4.0.4.tgz#a6dba62a8bc44c6b02cf569a9eb41e41a83814a7"
-  integrity sha512-kW6FUP6ibp9pG2JAhRBKEgVRgG4lhIFSOxDEmz/5fiAeVAZWYnVEb2MTlMCYbeBTyf1WKSVvGII3RiLHkc9hlA==
+docus@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/docus/-/docus-4.1.4.tgz#dfa57c55c014cefcdf03f20eb0860d6fa786326e"
+  integrity sha512-9uUNPsLtyaoa5FI4casMtLRgFI+SExTsj59yqELUlJ8FB8Ddt04qe5oTBeypgZ3EJkfUBKXm4BbRFcix3m5Yfw==
   dependencies:
     "@iconify-json/lucide" "^1.2.60"
     "@iconify-json/simple-icons" "^1.2.46"
@@ -4433,6 +4433,7 @@ docus@latest:
     "@nuxtjs/robots" "^5.4.0"
     "@vueuse/core" "^13.6.0"
     defu "^6.1.4"
+    exsolve "^1.0.7"
     git-url-parse "^16.1.0"
     minimark "^0.2.0"
     motion-v "^1.7.0"

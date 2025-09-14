@@ -178,6 +178,53 @@ Whether to apply GROUP BY when dimensions are present. When `True`, dimensions w
 }
 ```
 
+### ordered
+
+**Type:** `Optional[bool]`  
+**Default:** `True`  
+**Required:** No
+
+Whether to apply ordering to the query results. When `True`, the order sequences will be used to sort results.
+
+```json
+{
+    "ordered": true
+}
+```
+
+### order
+
+**Type:** `Optional[List[SemanticOrderSequence]]`  
+**Default:** `None`  
+**Required:** No
+
+List of order sequences defining how to sort the query results. Each sequence specifies what to sort by and how to sort it.
+
+```json
+{
+    "order": [
+        {
+            "reference_type": "MEASURE",
+            "reference": "total_revenue",
+            "order_type": "DESC",
+            "nulls_position": "LAST"
+        },
+        {
+            "reference_type": "DIMENSION",
+            "reference": "month", 
+            "order_type": "ASC",
+            "nulls_position": "FIRST"
+        }
+    ]
+}
+```
+
+**Order Sequence Properties:**
+- **reference_type**: Type of reference (`MEASURE`, `DIMENSION`, `COLUMN`, `POSITION`)
+- **reference**: Name of the measure, dimension, column, or position number
+- **order_type**: Sort direction (`ASC` or `DESC`)
+- **nulls_position**: Where to place null values (`FIRST` or `LAST`)
+
 ### version
 
 **Type:** `int`  

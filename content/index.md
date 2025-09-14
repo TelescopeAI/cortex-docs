@@ -50,7 +50,7 @@ Core Capabilities
   Semantic Layer
 
   #description
-  Define and manage data models in JSON with measures, dimensions, and filters. Dynamic schema generation with plugin support and advanced output formatting for both query-time and post-execution transformations.
+  Define and manage data models in JSON with measures, dimensions, filters, and ordering. Dynamic schema generation with plugin support and advanced output formatting for both query-time and post-execution transformations.
   :::
 
   :::u-page-feature

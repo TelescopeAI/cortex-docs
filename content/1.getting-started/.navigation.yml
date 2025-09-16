@@ -1,2 +1,7 @@
 title: Getting Started
 icon: i-lucide-rocket
+pages:
+  - 2.introduction.md
+  - 3.installation.md
+  - 4.project-structure.md
+  - 5.ide-and-agent-setup.md

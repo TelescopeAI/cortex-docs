@@ -13,7 +13,34 @@ export default defineNuxtConfig({
     content: {
         preview: {
             dev: true,
-          }
+        },
+        build: {
+            markdown: {
+                highlight: {
+                    // Theme used in all color schemes
+                    // theme: 'one-light',
+                    // OR for multiple themes (compatible with Color Mode module)
+                    // theme: {
+                    //     default: 'one-light',
+                    //     dark: 'night-owl',
+                    //     sepia: 'aurora-x'
+                    // },
+                    // Languages to load for syntax highlighting
+                    langs: [
+                        'python',
+                        'javascript', 
+                        'typescript',
+                        'json',
+                        'html',
+                        'css',
+                        'sql',
+                        'bash',
+                        'yaml',
+                        'markdown'
+                    ]
+                }
+            }
+        }
     },
     llms:{
         domain: 'https://jointelscope.com',

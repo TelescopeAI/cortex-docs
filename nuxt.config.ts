@@ -42,7 +42,10 @@ export default defineNuxtConfig({
             }
         }
     },
-    
+    server: {
+        port: 8080,
+        host: '0.0.0.0'
+    },
     llms:{
         domain: 'https://jointelscope.com',
         title: 'Telescope - Cortex',
@@ -51,11 +54,6 @@ export default defineNuxtConfig({
             title: 'Cortex Semantic Layer',
             description: 'Data Analytics Platform for AI first companies',
           },
-    },
-    nitro: {
-        firebase: {
-            gen: 2
-        }
     }
   })
   

@@ -35,3 +35,14 @@ logs
 #VSC
 .history
 .wrangler
+
+# Environment variables
+.env
+.env.*
+*.env
+.envrc
+
+#Firebase
+.firebase
+.firebaserc
+.apphosting

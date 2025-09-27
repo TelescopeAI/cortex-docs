@@ -52,6 +52,14 @@ export default defineNuxtConfig({
             description: 'Data Analytics Platform for AI first companies',
           },
     },
+    nitro: {
+        firebase: {
+          gen: 2 // Use the recommended 2nd generation functions
+        }
+      },
+    image: {
+        dir: 'assets/images'
+    },
   })
   
 

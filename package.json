@@ -1,12 +1,16 @@
 {
   "name": "Cortex",
+  "main": "node index.mjs",
   "scripts": {
     "dev": "nuxt dev --extends docus",
-    "build": "nuxt build --extends docus"
+    "build": "nuxt build --extends docus",
+    "build:firebase": "nuxt build --extends docus --preset=firebase-app-hosting",
+    "deploy:firebase": "yarn build:firebase && firebase deploy",
+    "preview:firebase": "yarn build:firebase && firebase emulators:start"
   },
   "dependencies": {
-    "docus": "^4.1.4",
     "better-sqlite3": "^12.2.0",
+    "docus": "https://pkg.pr.new/docus@1173",
     "nuxt": "^4.0.0"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"

@@ -1,8 +1,8 @@
 {
   "name": "Cortex",
   "scripts": {
-    "dev": "nuxt dev --extends docus",
-    "build": "nuxt build --extends docus",
+    "dev": "nuxt dev",
+    "build": "nuxt build",
     "build:firebase": "nuxt build --extends docus --preset=firebase_app_hosting",
     "deploy:firebase": "yarn build:firebase && firebase deploy",
     "preview:firebase": "yarn build:firebase && firebase emulators:start"

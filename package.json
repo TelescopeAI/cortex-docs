@@ -1,7 +1,6 @@
 {
   "name": "Cortex",
   "scripts": {
-    "start": "node .output/server/index.mjs",
     "dev": "nuxt dev",
     "build": "nuxt build && node start.js",
     "build:firebase": "nuxt build --preset=firebase_app_hosting",

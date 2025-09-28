@@ -3,13 +3,13 @@ export default defineNuxtConfig({
     compatibilityDate: '2025-07-15',
     devtools: {
         enabled: true,
-    
+
         timeline: {
-          enabled: true
+            enabled: true
         }
-      },
+    },
     modules: ['@nuxt/content', 'nuxt-llms'],
-    
+
     content: {
         preview: {
             dev: true,
@@ -28,7 +28,7 @@ export default defineNuxtConfig({
                     // Languages to load for syntax highlighting
                     langs: [
                         'python',
-                        'javascript', 
+                        'javascript',
                         'typescript',
                         'json',
                         'html',
@@ -46,16 +46,22 @@ export default defineNuxtConfig({
         port: 8080,
         host: '0.0.0.0'
     },
-    llms:{
+    llms: {
         domain: 'https://jointelscope.com',
         title: 'Telescope - Cortex',
         description: 'Embeddable Semantic Layer',
         full: {
             title: 'Cortex Semantic Layer',
             description: 'Data Analytics Platform for AI first companies',
-          },
+        },
+    },
+    nitro: {
+        firebase: {
+            gen: 2,
+            // ...
+        }
     }
-  })
+})
   
 
 

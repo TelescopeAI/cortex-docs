@@ -43,7 +43,7 @@ export default defineNuxtConfig({
         }
     },
     server: {
-        port: 8080,
+        port: process.env.PORT || 8080,
         host: '0.0.0.0'
     },
     llms: {
@@ -57,9 +57,7 @@ export default defineNuxtConfig({
     },
     nitro: {
         firebase: {
-            gen: 2,
-            // ...
-        }
+            gen: 2,        }
     }
 })
   

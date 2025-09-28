@@ -1,15 +1,20 @@
 {
   "name": "Cortex",
+  "main": "node .output/server/index.mjs",
   "scripts": {
+    "start": "node .output/server/index.mjs",
     "dev": "nuxt dev",
     "build": "nuxt build",
-    "build:firebase": "nuxt build --extends docus --preset=firebase_app_hosting",
+    "build:firebase": "nuxt build --preset=firebase_app_hosting",
     "deploy:firebase": "yarn build:firebase && firebase deploy",
     "preview:firebase": "yarn build:firebase && firebase emulators:start"
   },
   "dependencies": {
     "better-sqlite3": "^12.2.0",
     "docus": "^5.0.0",
+    "firebase-admin": "^13.5.0",
+    "firebase-functions": "^6.4.0",
+    "firebase-functions-test": "^3.4.1",
     "nuxt": "^4.1.2"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"

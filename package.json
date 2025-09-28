@@ -1,10 +1,9 @@
 {
   "name": "Cortex",
-  "main": "node .output/server/index.mjs",
   "scripts": {
     "start": "node .output/server/index.mjs",
     "dev": "nuxt dev",
-    "build": "nuxt build",
+    "build": "nuxt build && node start.js",
     "build:firebase": "nuxt build --preset=firebase_app_hosting",
     "deploy:firebase": "yarn build:firebase && firebase deploy",
     "preview:firebase": "yarn build:firebase && firebase emulators:start"

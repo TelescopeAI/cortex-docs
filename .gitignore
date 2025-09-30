@@ -46,3 +46,6 @@ logs
 .firebase
 .firebaserc
 .apphosting
+
+#Amplify
+.amplify-hosting

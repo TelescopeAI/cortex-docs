@@ -46,6 +46,9 @@ export default defineNuxtConfig({
         port: process.env.PORT || 8080,
         host: '0.0.0.0'
     },
+    nitro: {
+        preset: 'aws_amplify',
+    },
     llms: {
         domain: 'https://jointelscope.com',
         title: 'Telescope - Cortex',

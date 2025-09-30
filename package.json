@@ -2,7 +2,7 @@
   "name": "Cortex",
   "scripts": {
     "dev": "nuxt dev",
-    "build": "nuxt build && node start.js",
+    "build": "nuxt build",
     "build:firebase": "nuxt build --preset=firebase_app_hosting",
     "deploy:firebase": "yarn build:firebase && firebase deploy",
     "preview:firebase": "yarn build:firebase && firebase emulators:start"

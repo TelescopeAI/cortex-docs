@@ -9,7 +9,6 @@ export default defineNuxtConfig({
         }
     },
     modules: ['@nuxt/content', 'nuxt-llms'],
-
     content: {
         preview: {
             dev: true,
@@ -55,11 +54,6 @@ export default defineNuxtConfig({
             description: 'Data Analytics Platform for AI first companies',
         },
     },
-    nitro: {
-        firebase: {
-            gen: 2,        
-        }
-    }
 })
   
 

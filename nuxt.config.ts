@@ -48,6 +48,7 @@ export default defineNuxtConfig({
     },
     nitro: {
         preset: 'aws_amplify',
+        logLevel: 5,
     },
     llms: {
         domain: 'https://jointelscope.com',
